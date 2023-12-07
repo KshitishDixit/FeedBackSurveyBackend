@@ -16,10 +16,10 @@ const app=express()
 app.use(express.json());
 app.use(cors());
 
-app.get('/',(req,res)=>{
+// app.get('/',(req,res)=>{
 
-    res.send({hi:'there'});
-})
+//     res.send({hi:'there'});
+// })
 app.use(cookieSession({
     maxAge:30*24*60*60*1000,
     keys:[keys.cookieKey]
